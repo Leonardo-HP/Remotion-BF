@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import styled from 'styled-components';
 
 interface TextoBFProps {
@@ -26,7 +25,6 @@ export function TextoBF(props: TextoBFProps) {
 					Box Factura
 				</text>
 			</svg>
-
 		</Container>
 	);
 }
