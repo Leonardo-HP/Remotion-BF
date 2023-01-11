@@ -5,35 +5,38 @@ import styled from 'styled-components'
 import { Logo } from "./logo";
 
 
+interface BackgroundContainerProps {
+	transformX: number;
+}
+
 
 
 const BackgroundContainer = styled.div`
-widht:100%
-background: linear-gradient(110deg, red 60%, white 60%);
-`
-
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: linear-gradient(110deg, #CC1E2C 60%, #FFFFFF 60%);
+`;
 
 const CenteredContainer = styled.div`
 width: 100%;
-display: flex:
-flex-direction: colum;
+display: flex;
 align-items: center;
+flex-direction: column;
+`;
 
+export function BoxFacturaLogo(props: BackgroundContainerProps) {
 
-`
-
-export function BoxFactura()  {
-
-  return <Sequence>
-  <BackgroundContainer>
-  <CenteredContainer>
-
-
-    <Logo />
-  </CenteredContainer>
   
-  </BackgroundContainer>
+  return  <BackgroundContainer>
+  <Sequence from={1}>
+  <CenteredContainer>
+    <Logo/>
+  </CenteredContainer>
   </Sequence>
-
+  </BackgroundContainer>
 
 }

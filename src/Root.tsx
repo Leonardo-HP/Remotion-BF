@@ -1,5 +1,6 @@
 import {Composition} from 'remotion';
-import { BoxFactura } from './BoxFactura';
+import { BoxFacturaLogo } from './BoxFactura';
+
 
 
 import {Logo} from './HelloWorld/Logo';
@@ -9,7 +10,7 @@ import {Logo} from './HelloWorld/Logo';
 export const RemotionRoot: React.FC = () => {
 	return (
 		<>
-			<Composition id="BoxFactura-Logo" component={BoxFactura}
+			<Composition id='BoxFactura-Logo' component={BoxFacturaLogo}
 				durationInFrames={150}
 				fps={30}
 				width={1920}
