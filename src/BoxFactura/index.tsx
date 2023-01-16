@@ -2,6 +2,7 @@ import React from 'react';
 import {Sequence} from 'remotion/.';
 
 import styled from 'styled-components';
+import {CuadroRojo} from '../CuadroRojo';
 import {Logo} from './logo';
 
 interface BackgroundContainerProps {
@@ -33,6 +34,8 @@ export function BoxFacturaLogo(props: BackgroundContainerProps) {
 			<Sequence from={1}>
 				<CenteredContainer>
 					<Logo />
+
+					<CuadroRojo />
 				</CenteredContainer>
 			</Sequence>
 		</BackgroundContainer>
