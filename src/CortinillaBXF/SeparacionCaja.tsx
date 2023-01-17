@@ -12,23 +12,30 @@ export const SeparacionCaja: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const driver = spring({
+		from:0,
+		to:100,
 		frame,
 		fps,
+		config: {
+			mass:10,
+			stiffness: 20,
+			damping:100,
+		},
 	});
 
-	const leftL = interpolate(frame, [0, 10], [700, -700], {
+	const leftL = interpolate(driver, [0, 10], [700, -700], {
 		extrapolateRight: 'clamp',
 	});
 
-	const leftR = interpolate(frame, [0, 10], [700, 1600], {
+	const leftR = interpolate(driver, [0, 10], [700, 1600], {
 		extrapolateRight: 'clamp',
 	});
 
-	const topT = interpolate(frame, [0, 10], [280, -280], {
+	const topT = interpolate(driver, [0, 10], [280, -280], {
 		extrapolateRight: 'clamp',
 	});
 
-	const topB = interpolate(frame, [0, 10], [280, 640], {
+	const topB = interpolate(driver, [0, 10], [280, 640], {
 		extrapolateRight: 'clamp',
 	});
 

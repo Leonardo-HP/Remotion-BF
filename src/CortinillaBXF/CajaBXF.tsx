@@ -12,15 +12,22 @@ export const CajaBXF: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const driver = spring({
+		from:5,
+		to:15,
 		frame,
 		fps,
+		config: {
+			mass:10,
+			stiffness: 80,
+			damping:200,
+		},
 	});
 
-	const top = interpolate(frame, [0, 10], [1200, 280], {
+	const top = interpolate(driver, [0, 10], [1200, 280], {
 		extrapolateRight: 'clamp',
 	});
 
-	const topTapa = interpolate(frame, [0, 20], [-1280, 280], {
+	const topTapa = interpolate(driver, [0, 10], [-1280, 280], {
 		extrapolateRight: 'clamp',
 	});
 

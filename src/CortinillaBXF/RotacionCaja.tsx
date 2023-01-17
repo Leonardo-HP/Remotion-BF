@@ -12,11 +12,17 @@ export const RotacionCaja: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const driver = spring({
+		from:0,
+		to:100,
 		frame,
 		fps,
+		config: {
+			mass:10,
+			stiffness: 20,
+			damping:100,
+		},
 	});
-
-	const rotacion = interpolate(frame, [0, 20], [0, 180], {
+	const rotacion = interpolate(driver, [0, 20], [0, 180], {
 		extrapolateRight: 'clamp',
 	});
 

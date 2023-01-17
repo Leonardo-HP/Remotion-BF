@@ -1,13 +1,6 @@
-import {
-	useVideoConfig,
-	useCurrentFrame,
-	Sequence,
-	interpolate,
-} from 'remotion/.';
+import {useVideoConfig, Sequence} from 'remotion/.';
 import {CuadroRojo} from './CuadroRojo';
-import {France} from './France';
-import {Rain} from './Rain';
-import {RainDrop} from './RainDrop';
+
 import {TextoLogoBXF} from './TextoLogoBXF';
 import {CajaBXF} from './CajaBXF';
 import {RotacionCaja} from './RotacionCaja';
@@ -16,12 +9,6 @@ import {CuadroBlancoSalida} from './CuadroBlancoSalida';
 
 export const MyComposition = () => {
 	const {fps, durationInFrames, width, height} = useVideoConfig();
-	const frame = useCurrentFrame();
-	const opacity = frame / durationInFrames;
-
-	const left = interpolate(frame, [0, 10], [200, 800], {
-		extrapolateRight: 'clamp',
-	});
 
 	return (
 		<div
