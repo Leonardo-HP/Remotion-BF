@@ -13,7 +13,7 @@ export const SeparacionCaja: React.FC = () => {
 	const {fps} = useVideoConfig();
 	const driver = spring({
 		from:0,
-		to:100,
+		to:80,
 		frame,
 		fps,
 		config: {
@@ -23,19 +23,25 @@ export const SeparacionCaja: React.FC = () => {
 		},
 	});
 
+	const rotacion = interpolate(driver, [0, 20], [0, 50], {
+		extrapolateRight: 'clamp',
+	});
+
+
+
 	const leftL = interpolate(driver, [0, 10], [700, -700], {
 		extrapolateRight: 'clamp',
 	});
 
-	const leftR = interpolate(driver, [0, 10], [700, 1600], {
+	const leftR = interpolate(driver, [0, 10], [700, 2000], {
 		extrapolateRight: 'clamp',
 	});
 
-	const topT = interpolate(driver, [0, 10], [280, -280], {
+	const topT = interpolate(driver, [0, 10], [280, -500], {
 		extrapolateRight: 'clamp',
 	});
 
-	const topB = interpolate(driver, [0, 10], [280, 640], {
+	const topB = interpolate(driver, [0, 10], [280, 1200], {
 		extrapolateRight: 'clamp',
 	});
 
@@ -49,6 +55,7 @@ export const SeparacionCaja: React.FC = () => {
 						borderTop: '10px solid white',
 						left: '700px',
 						top: topT,
+						transform: `rotate(${rotacion}deg)`,
 					}}
 				/>
 			</Sequence>
@@ -61,6 +68,7 @@ export const SeparacionCaja: React.FC = () => {
 						borderBottom: '10px solid white',
 						left: '700px',
 						top: topB,
+						transform: `rotate(${rotacion}deg)`,
 					}}
 				/>
 			</Sequence>
@@ -72,6 +80,7 @@ export const SeparacionCaja: React.FC = () => {
 						borderLeft: '10px solid white',
 						left: leftL,
 						top: '280px',
+						transform: `rotate(${rotacion}deg)`,
 					}}
 				/>
 			</Sequence>
@@ -83,6 +92,7 @@ export const SeparacionCaja: React.FC = () => {
 						borderRight: '10px solid white',
 						left: leftR,
 						top: '280px',
+						transform: `rotate(${rotacion}deg)`,
 					}}
 				/>
 			</Sequence>

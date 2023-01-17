@@ -22,7 +22,7 @@ export const RotacionCaja: React.FC = () => {
 			damping:100,
 		},
 	});
-	const rotacion = interpolate(driver, [0, 20], [0, 180], {
+	const rotacion = interpolate(driver, [0, 30], [0, 90], {
 		extrapolateRight: 'clamp',
 	});
 

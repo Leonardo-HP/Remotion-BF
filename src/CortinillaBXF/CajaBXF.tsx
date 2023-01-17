@@ -12,7 +12,7 @@ export const CajaBXF: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const driver = spring({
-		from:5,
+		from:0,
 		to:15,
 		frame,
 		fps,
