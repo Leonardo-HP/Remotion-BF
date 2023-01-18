@@ -22,10 +22,18 @@ export const Mark: React.FC = () => {
 			damping:200,
 		},
 	});
-	const left = interpolate(driver, [10, 90], [280, 1200], {
+	const left = interpolate(frame, [10, 90], [280, 1200], {
 		extrapolateRight: 'clamp',
 	});
 
+
+	const borderRadius = interpolate(frame, [10, 90], [0, 250], {
+		extrapolateRight: 'clamp',
+	});
+
+	const rotacion = interpolate(frame, [0, 90], [0, -250], {
+		extrapolateRight: 'clamp',
+	});
 
 
 	return (
@@ -36,11 +44,25 @@ export const Mark: React.FC = () => {
 						height: '500px',
 						width: '500px',
 						border: '10px solid white',
+						borderRadius,
+						transform: `rotate(${rotacion}deg)`,
 						top:'280px',
 						left,
+					
 					}}
 
-				/>
+				>
+					
+					<p style={{	color:'red',
+				fontFamily: 'Arial',
+				fontSize: '5em',
+				textAlign: 'center',
+				
+				}}> Hi, im Mark the mark!
+				</p>
+				</AbsoluteFill>
+
+
 			</Sequence>
 
 	
