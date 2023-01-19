@@ -143,145 +143,143 @@ export const Nube: React.FC = () => {
 		extrapolateRight: 'clamp',
 	});
 
-/// regreso-----------------------------------------------------
+	/// regreso-----------------------------------------------------
 
-const rotacionRegreso = interpolate(frame, [22, 30], [110, 0], {
-	extrapolateRight: 'clamp',
-});
+	const rotacionRegreso = interpolate(frame, [22, 30], [110, 0], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderRadiusxRegreso = interpolate(frame, [22, 30], [250, 0], {
-	extrapolateRight: 'clamp',
-});
+	const borderRadiusxRegreso = interpolate(frame, [22, 30], [250, 0], {
+		extrapolateRight: 'clamp',
+	});
 
-const escalaRegreso = interpolate(frame, [22, 30], [0.7, 1], {
-	extrapolateRight: 'clamp',
-});
+	const escalaRegreso = interpolate(frame, [22, 30], [0.7, 1], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderLeftCirculo1Regreso = interpolate(frame, [17, 22], [0, 5], {
-	extrapolateRight: 'clamp',
-});
+	const borderLeftCirculo1Regreso = interpolate(frame, [17, 22], [0, 5], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderTopCirculo1Regreso = interpolate(frame, [17, 22], [0, 10], {
-	extrapolateRight: 'clamp',
-});
+	const borderTopCirculo1Regreso = interpolate(frame, [17, 22], [0, 10], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderTopRightRadius1Regreso = interpolate(frame,[17, 22], [400, 0], {
-	extrapolateRight: 'clamp',
-});
+	const borderTopRightRadius1Regreso = interpolate(frame, [17, 22], [400, 0], {
+		extrapolateRight: 'clamp',
+	});
 
-const escalaCirulo1Regreso = interpolate(frame, [17, 22], [0.3, 0.3], {
-	extrapolateRight: 'clamp',
-});
+	const escalaCirulo1Regreso = interpolate(frame, [17, 22], [0.3, 0.3], {
+		extrapolateRight: 'clamp',
+	});
 
+	const topCirculo1Regreso = interpolate(frame, [17, 22], [379, 280], {
+		extrapolateRight: 'clamp',
+	});
 
+	const leftCirculo1Regreso = interpolate(frame, [17, 22], [480, 700], {
+		extrapolateRight: 'clamp',
+	});
 
+	const borderLeftCirculo2Regreso = interpolate(frame, [17, 22], [0, 10], {
+		extrapolateRight: 'clamp',
+	});
 
+	const borderTopCirculo2Regreso = interpolate(frame, [17, 22], [0, 10], {
+		extrapolateRight: 'clamp',
+	});
 
+	const borderTopRightRadius2Regreso = interpolate(frame, [17, 22], [0, 250], {
+		extrapolateRight: 'clamp',
+	});
 
-const topCirculo1Regreso = interpolate(frame, [17, 22], [379, 280], {
-	extrapolateRight: 'clamp',
-});
+	const escalaCirulo2Regreso = interpolate(frame, [17, 22], [0.23, 0.7], {
+		extrapolateRight: 'clamp',
+	});
 
-const leftCirculo1Regreso = interpolate(frame, [17, 22], [480, 700], {
-	extrapolateRight: 'clamp',
-});
+	const topCirculo2Regreso = interpolate(frame, [17, 22], [300, 280], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderLeftCirculo2Regreso = interpolate(frame, [17, 22], [0, 10], {
-	extrapolateRight: 'clamp',
-});
+	const leftCirculo2Regreso = interpolate(frame, [17, 22], [570, 700], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderTopCirculo2Regreso = interpolate(frame, [17, 22], [0, 10], {
-	extrapolateRight: 'clamp',
-});
+	const borderLeftCirculo3Regreso = interpolate(frame, [17, 22], [0, 10], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderTopRightRadius2Regreso = interpolate(frame, [17, 22], [0, 250], {
-	extrapolateRight: 'clamp',
-});
+	const borderTopCirculo3Regreso = interpolate(frame, [17, 22], [0, 10], {
+		extrapolateRight: 'clamp',
+	});
 
-const escalaCirulo2Regreso = interpolate(frame, [17, 22], [0.23, 0.7], {
-	extrapolateRight: 'clamp',
-});
+	const borderTopRightRadius3Regreso = interpolate(frame, [17, 22], [0, 250], {
+		extrapolateRight: 'clamp',
+	});
 
-const topCirculo2Regreso = interpolate(frame, [17, 22], [300, 280], {
-	extrapolateRight: 'clamp',
-});
+	const escalaCirulo3Regreso = interpolate(frame, [17, 22], [0.45, 0.7], {
+		extrapolateRight: 'clamp',
+	});
 
-const leftCirculo2Regreso = interpolate(frame, [17, 22], [570, 700], {
-	extrapolateRight: 'clamp',
-});
+	const topCirculo3Regreso = interpolate(frame, [17, 22], [260, 280], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderLeftCirculo3Regreso = interpolate(frame, [17, 22], [0, 10], {
-	extrapolateRight: 'clamp',
-});
+	const leftCirculo3Regreso = interpolate(frame, [17, 22], [730, 700], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderTopCirculo3Regreso = interpolate(frame, [17, 22], [0, 10], {
-	extrapolateRight: 'clamp',
-});
+	const borderLeftCirculo4Regreso = interpolate(frame, [17, 22], [0, 10], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderTopRightRadius3Regreso = interpolate(frame, [17, 22], [0, 250], {
-	extrapolateRight: 'clamp',
-});
+	const borderTopCirculo4Regreso = interpolate(frame, [17, 22], [7, 10], {
+		extrapolateRight: 'clamp',
+	});
 
-const escalaCirulo3Regreso = interpolate(frame, [17, 22], [0.45, 0.7], {
-	extrapolateRight: 'clamp',
-});
+	const borderTopRightRadius4Regreso = interpolate(frame, [17, 22], [0, 250], {
+		extrapolateRight: 'clamp',
+	});
 
-const topCirculo3Regreso = interpolate(frame, [17, 22], [260, 280], {
-	extrapolateRight: 'clamp',
-});
+	const escalaCirulo4Regreso = interpolate(frame, [17, 22], [0.3, 0.7], {
+		extrapolateRight: 'clamp',
+	});
 
-const leftCirculo3Regreso = interpolate(frame, [17, 22], [730, 700], {
-	extrapolateRight: 'clamp',
-});
+	const topCirculo4Regreso = interpolate(frame, [17, 22], [379, 280], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderLeftCirculo4Regreso = interpolate(frame, [17, 22], [0, 10], {
-	extrapolateRight: 'clamp',
-});
+	const leftCirculo4Regreso = interpolate(frame, [17, 22], [873, 700], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderTopCirculo4Regreso = interpolate(frame, [17, 22], [7, 10], {
-	extrapolateRight: 'clamp',
-});
+	const opacityRegreso = interpolate(frame, [17, 22], [1, 1], {
+		extrapolateRight: 'clamp',
+	});
 
-const borderTopRightRadius4Regreso = interpolate(frame, [17, 22], [0, 250], {
-	extrapolateRight: 'clamp',
-});
+	const borradorHeightRegreso = interpolate(frame, [17, 22], [66, 350], {
+		extrapolateRight: 'clamp',
+	});
 
-const escalaCirulo4Regreso = interpolate(frame, [17, 22], [0.3, 0.7], {
-	extrapolateRight: 'clamp',
-});
+	const borradorRadioRegreso = interpolate(frame, [17, 22], [0, 250], {
+		extrapolateRight: 'clamp',
+	});
 
-const topCirculo4Regreso = interpolate(frame, [17, 22], [379, 280], {
-	extrapolateRight: 'clamp',
-});
+	const borradorWidhtRegreso = interpolate(frame, [17, 22], [180, 180], {
+		extrapolateRight: 'clamp',
+	});
 
-const leftCirculo4Regreso = interpolate(frame, [17, 22], [873, 700], {
-	extrapolateRight: 'clamp',
-});
+	const borderRadiusxBaseRegreso = interpolate(frame, [17, 22], [0, 250], {
+		extrapolateRight: 'clamp',
+	});
 
-const opacityRegreso = interpolate(frame, [17, 22], [1, 0], {
-	extrapolateRight: 'clamp',
-});
-
-const borderRadiusxBaseRegreso = interpolate(frame, [17, 22], [0, 250], {
-	extrapolateRight: 'clamp',
-});
-
-const escalaBaseRegreso = interpolate(frame, [17, 22], [0.7, 1], {
-	extrapolateRight: 'clamp',
-});
-
-
-
-
-
-
-
-
-
+	const escalaBaseRegreso = interpolate(frame, [17, 22], [0.7, 1], {
+		extrapolateRight: 'clamp',
+	});
 
 	return (
 		<>
-			<Sequence name="CajaCirculo" durationInFrames={5}  >
+			<Sequence name="CajaCirculo" durationInFrames={5}>
 				<AbsoluteFill
 					style={{
 						height: '500px',
@@ -295,7 +293,7 @@ const escalaBaseRegreso = interpolate(frame, [17, 22], [0.7, 1], {
 				/>
 			</Sequence>
 
-			<Sequence name="Circulo1" durationInFrames={12} from={5} >
+			<Sequence name="Circulo1" durationInFrames={12} from={5}>
 				<AbsoluteFill
 					style={{
 						height: '500px',
@@ -329,7 +327,7 @@ const escalaBaseRegreso = interpolate(frame, [17, 22], [0.7, 1], {
 					}}
 				/>
 			</Sequence>
-			<Sequence name="Circulo3" durationInFrames={12} from={5} >
+			<Sequence name="Circulo3" durationInFrames={12} from={5}>
 				<AbsoluteFill
 					style={{
 						height: '500px',
@@ -346,7 +344,7 @@ const escalaBaseRegreso = interpolate(frame, [17, 22], [0.7, 1], {
 					}}
 				/>
 			</Sequence>
-			<Sequence name="Circulo4" durationInFrames={12} from={5} >
+			<Sequence name="Circulo4" durationInFrames={12} from={5}>
 				<AbsoluteFill
 					style={{
 						height: '500px',
@@ -378,8 +376,7 @@ const escalaBaseRegreso = interpolate(frame, [17, 22], [0.7, 1], {
 				/>
 			</Sequence>
 
-			<Sequence name="Base" durationInFrames={12} from={5} >
-				
+			<Sequence name="Base" durationInFrames={12} from={5}>
 				<AbsoluteFill
 					style={{
 						height: '500px',
@@ -393,20 +390,7 @@ const escalaBaseRegreso = interpolate(frame, [17, 22], [0.7, 1], {
 				/>
 			</Sequence>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<Sequence name="CajaCirculoRegreso" from={22}>
+			<Sequence name="CajaCirculoRegreso" from={22}>
 				<AbsoluteFill
 					style={{
 						height: '500px',
@@ -492,13 +476,14 @@ const escalaBaseRegreso = interpolate(frame, [17, 22], [0.7, 1], {
 			<Sequence name="borradorRegreso" from={17} durationInFrames={5}>
 				<AbsoluteFill
 					style={{
-						height: '66px',
-						width: '180px',
+						height: `${borradorHeightRegreso}px`,
+						width: `${borradorWidhtRegreso}px`,
 						background: 'red',
 						top: '533px',
 						left: '760px',
 						transform: `rotate(157deg)`,
-						opacity:opacityRegreso,
+						opacity: opacityRegreso,
+						borderRadius: borradorRadioRegreso,
 					}}
 				/>
 			</Sequence>
@@ -513,14 +498,10 @@ const escalaBaseRegreso = interpolate(frame, [17, 22], [0.7, 1], {
 						left: '700px',
 						transform: ` scale(${escalaBaseRegreso})`,
 						borderRadius: borderRadiusxBaseRegreso,
-						opacity:opacityRegreso,
+						opacity: opacityRegreso,
 					}}
 				/>
 			</Sequence>
-
-
-
-
 		</>
 	);
 };

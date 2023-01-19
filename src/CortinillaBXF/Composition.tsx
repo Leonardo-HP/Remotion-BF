@@ -6,6 +6,8 @@ import {CajaBXF} from './CajaBXF';
 import {RotacionCaja} from './RotacionCaja';
 import {SeparacionCaja} from './SeparacionCaja';
 import {CuadroBlancoSalida} from './CuadroBlancoSalida';
+import { Nube } from './Nube';
+import { Candado } from './Candado';
 
 export const MyComposition = () => {
 	const {fps, durationInFrames, width, height} = useVideoConfig();
@@ -55,6 +57,8 @@ export const MyComposition = () => {
 			<Sequence name="cortinillaSalida" from={120} durationInFrames={25}>
 				<CuadroBlancoSalida />
 			</Sequence>
+		
+
 		</div>
 	);
 };

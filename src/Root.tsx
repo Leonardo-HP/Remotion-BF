@@ -1,4 +1,5 @@
 import {Composition} from 'remotion';
+import { Calendario } from './CortinillaBXF/Calendario';
 import { Candado } from './CortinillaBXF/Candado';
 
 import {MyComposition} from './CortinillaBXF/Composition';
@@ -13,7 +14,7 @@ export const RemotionRoot: React.FC = () => {
 			<Composition
 				id="Demo"
 				component={MyComposition}
-				durationInFrames={150}
+				durationInFrames={200}
 				fps={30}
 				width={1920}
 				height={1080}
@@ -46,6 +47,17 @@ export const RemotionRoot: React.FC = () => {
 				width={1920}
 				height={1080}
 			/>
+
+
+<Composition
+				id="Calendario"
+				component={Calendario}
+				durationInFrames={31}
+				fps={30}
+				width={1920}
+				height={1080}
+			/>
+
 
 
 		</>
