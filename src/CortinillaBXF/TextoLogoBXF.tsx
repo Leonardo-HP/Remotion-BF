@@ -8,6 +8,8 @@ import {
 	Sequence,
 } from 'remotion';
 
+import { Texto } from './TextoLogo2';
+
 export const TextoLogoBXF: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
@@ -18,7 +20,15 @@ export const TextoLogoBXF: React.FC = () => {
 
 	const opacity = interpolate(frame, [15, 16], [0, 1]);
 
-	const escala = interpolate(frame, [84, 90], [1, 2], {
+	const escalaPeque = interpolate(frame, [84, 90], [1, 0], {
+		extrapolateRight: 'clamp',
+	});
+
+	const escalaGrande = interpolate(frame, [198, 210], [0, 1.5], {
+		extrapolateRight: 'clamp',
+	});
+
+	const escalaSalida = interpolate(frame, [210, 276], [1.5, 2], {
 		extrapolateRight: 'clamp',
 	});
 
@@ -27,34 +37,43 @@ export const TextoLogoBXF: React.FC = () => {
 			<Sequence name="aparece" durationInFrames={84}>
 				<AbsoluteFill
 					style={{
-						fontFamily: 'Arial',
-						fontSize: '7em',
-						textAlign: 'center',
-						padding: '400px ',
 						opacity,
 					}}
 				>
-					BOX
-					<br />
-					factura
+			<Texto/>
 				</AbsoluteFill>
 			</Sequence>
 
-			<Sequence name="escala" from={84}>
+			<Sequence name="escalaPeque" from={84}>
 				<AbsoluteFill
 					style={{
-						fontFamily: 'Arial',
-						fontSize: '7em',
-						textAlign: 'center',
-						padding: '400px ',
-						transform: `scale(${escala})`,
+						transform: `scale(${escalaPeque})`,
 					}}
 				>
-					BOX
-					<br />
-					factura
+				<Texto/>
 				</AbsoluteFill>
 			</Sequence>
+
+			<Sequence name="escalaGrande" from={198} durationInFrames={12}>
+				<AbsoluteFill
+					style={{
+						transform: `scale(${escalaGrande})`,
+					}}
+				>
+				<Texto/>
+				</AbsoluteFill>
+			</Sequence>
+
+			<Sequence name="escalaSalida" from={210}>
+				<AbsoluteFill
+					style={{
+						transform: `scale(${escalaSalida})`,
+					}}
+				>
+				<Texto/>
+				</AbsoluteFill>
+			</Sequence>
+
 		</>
 	);
 };

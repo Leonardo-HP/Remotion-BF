@@ -58,7 +58,7 @@ export const Candado: React.FC = () => {
 /// regreso-----------------------------------------------------
 
 
-	const rotacionRegreso = interpolate(frame, [17, 30], [-90, 0], {
+	const rotacionRegreso = interpolate(frame, [17, 30], [90, 0], {
 		extrapolateRight: 'clamp',
 	});
 
