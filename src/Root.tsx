@@ -1,10 +1,10 @@
 import {Composition} from 'remotion';
-import { Calendario } from './CortinillaBXF/Calendario';
-import { Candado } from './CortinillaBXF/Candado';
+import {Calendario} from './CortinillaBXF/Calendario';
+import {Candado} from './CortinillaBXF/Candado';
 
 import {MyComposition} from './CortinillaBXF/Composition';
-import { Nube } from './CortinillaBXF/Nube';
-import { Mark } from './Mark/Mark';
+import {Nube} from './CortinillaBXF/Nube';
+import {Mark} from './Mark/Mark';
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -20,7 +20,7 @@ export const RemotionRoot: React.FC = () => {
 				height={1080}
 			/>
 
-<Composition
+			<Composition
 				id="Demo2"
 				component={Mark}
 				durationInFrames={100}
@@ -29,7 +29,7 @@ export const RemotionRoot: React.FC = () => {
 				height={1080}
 			/>
 
-<Composition
+			<Composition
 				id="Candado"
 				component={Candado}
 				durationInFrames={31}
@@ -38,8 +38,7 @@ export const RemotionRoot: React.FC = () => {
 				height={1080}
 			/>
 
-
-<Composition
+			<Composition
 				id="Nube"
 				component={Nube}
 				durationInFrames={31}
@@ -48,8 +47,7 @@ export const RemotionRoot: React.FC = () => {
 				height={1080}
 			/>
 
-
-<Composition
+			<Composition
 				id="Calendario"
 				component={Calendario}
 				durationInFrames={31}
@@ -57,9 +55,6 @@ export const RemotionRoot: React.FC = () => {
 				width={1920}
 				height={1080}
 			/>
-
-
-
 		</>
 	);
 };

@@ -16,19 +16,18 @@ export const Texto: React.FC = () => {
 		fps,
 	});
 
-
 	return (
-				<AbsoluteFill
-					style={{
-						fontFamily: 'Arial',
-						fontSize: '7em',
-						textAlign: 'center',
-						padding: '400px ',
-					}}
-				>
-					BOX
-					<br />
-					factura
-				</AbsoluteFill>
+		<AbsoluteFill
+			style={{
+				fontFamily: 'Arial',
+				fontSize: '7em',
+				textAlign: 'center',
+				padding: '400px ',
+			}}
+		>
+			BOX
+			<br />
+			factura
+		</AbsoluteFill>
 	);
 };

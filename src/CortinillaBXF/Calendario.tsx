@@ -69,7 +69,6 @@ export const Calendario: React.FC = () => {
 
 	/// regreso-----------------------------------------------------
 
-
 	const rotacionRegreso = interpolate(frame, [25, 30], [0, -90], {
 		extrapolateRight: 'clamp',
 	});
@@ -320,7 +319,6 @@ export const Calendario: React.FC = () => {
 				</AbsoluteFill>
 			</Sequence>
 
-
 			<Sequence name="CalendarioRegreso" from={25}>
 				<AbsoluteFill
 					style={{
@@ -523,18 +521,6 @@ export const Calendario: React.FC = () => {
 					/>
 				</AbsoluteFill>
 			</Sequence>
-
-
-
-
-
 		</>
-
-
-
-
-
-
-
 	);
 };

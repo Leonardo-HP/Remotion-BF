@@ -307,7 +307,7 @@ export const Nube: React.FC = () => {
 						transform: `rotate(90deg) scale(${escalaCirulo1})`,
 						borderRadius: borderRadiusx,
 						borderTopRightRadius: borderTopRightRadius1,
-						background:'red'
+						background: 'red',
 					}}
 				/>
 			</Sequence>
@@ -325,7 +325,7 @@ export const Nube: React.FC = () => {
 						transform: `rotate(110deg) scale(${escalaCirulo2})`,
 						borderRadius: borderRadiusx,
 						borderTopRightRadius: borderTopRightRadius2,
-						background:'red'
+						background: 'red',
 					}}
 				/>
 			</Sequence>
@@ -343,8 +343,8 @@ export const Nube: React.FC = () => {
 						transform: `rotate(148deg) scale(${escalaCirulo3})`,
 						borderRadius: borderRadiusx,
 						borderTopRightRadius: borderTopRightRadius3,
-					
-						background:'red'
+
+						background: 'red',
 					}}
 				/>
 			</Sequence>
@@ -362,7 +362,7 @@ export const Nube: React.FC = () => {
 						transform: `rotate(180deg) scale(${escalaCirulo4})`,
 						borderRadius: borderRadiusx,
 						borderTopRightRadius: borderTopRightRadius4,
-						background:'red'
+						background: 'red',
 					}}
 				/>
 			</Sequence>
@@ -377,7 +377,6 @@ export const Nube: React.FC = () => {
 						left: '760px',
 						transform: ` rotate(157deg)`,
 						opacity,
-						
 					}}
 				/>
 			</Sequence>
@@ -392,7 +391,6 @@ export const Nube: React.FC = () => {
 						left: '700px',
 						transform: ` scale(${escalaBase})`,
 						borderRadius: borderRadiusxBase,
-						
 					}}
 				/>
 			</Sequence>
@@ -407,7 +405,7 @@ export const Nube: React.FC = () => {
 						left: '700px',
 						transform: `rotate(${rotacionRegreso}deg) scale(${escalaRegreso})`,
 						borderRadius: borderRadiusxRegreso,
-						background:'red'
+						background: 'red',
 					}}
 				/>
 			</Sequence>
@@ -426,7 +424,7 @@ export const Nube: React.FC = () => {
 						transform: `rotate(${rotacionRegreso}deg) scale(${escalaCirulo1Regreso})`,
 						borderRadius: borderRadiusxRegreso,
 						borderTopRightRadius: borderTopRightRadius1Regreso,
-						background:'red'
+						background: 'red',
 					}}
 				/>
 			</Sequence>
@@ -444,7 +442,7 @@ export const Nube: React.FC = () => {
 						transform: `rotate(110deg) scale(${escalaCirulo2Regreso})`,
 						borderRadius: borderRadiusxRegreso,
 						borderTopRightRadius: borderTopRightRadius2Regreso,
-						background:'red'
+						background: 'red',
 					}}
 				/>
 			</Sequence>
@@ -462,7 +460,7 @@ export const Nube: React.FC = () => {
 						transform: `rotate(148deg) scale(${escalaCirulo3Regreso})`,
 						borderRadius: borderRadiusxRegreso,
 						borderTopRightRadius: borderTopRightRadius3Regreso,
-						background:'red'
+						background: 'red',
 					}}
 				/>
 			</Sequence>
@@ -480,7 +478,7 @@ export const Nube: React.FC = () => {
 						transform: `rotate(180deg) scale(${escalaCirulo4Regreso})`,
 						borderRadius: borderRadiusxRegreso,
 						borderTopRightRadius: borderTopRightRadius4Regreso,
-						background:'red'
+						background: 'red',
 					}}
 				/>
 			</Sequence>
@@ -496,7 +494,6 @@ export const Nube: React.FC = () => {
 						transform: `rotate(157deg)`,
 						opacity: opacityRegreso,
 						borderRadius: borradorRadioRegreso,
-						
 					}}
 				/>
 			</Sequence>
@@ -512,7 +509,6 @@ export const Nube: React.FC = () => {
 						transform: ` scale(${escalaBaseRegreso})`,
 						borderRadius: borderRadiusxBaseRegreso,
 						opacity: opacityRegreso,
-					
 					}}
 				/>
 			</Sequence>

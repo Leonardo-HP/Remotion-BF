@@ -8,7 +8,7 @@ import {
 	Sequence,
 } from 'remotion';
 
-import { Texto } from './TextoLogo2';
+import {Texto} from './Texto';
 
 export const TextoLogoBXF: React.FC = () => {
 	const frame = useCurrentFrame();
@@ -40,7 +40,7 @@ export const TextoLogoBXF: React.FC = () => {
 						opacity,
 					}}
 				>
-			<Texto/>
+					<Texto />
 				</AbsoluteFill>
 			</Sequence>
 
@@ -50,7 +50,7 @@ export const TextoLogoBXF: React.FC = () => {
 						transform: `scale(${escalaPeque})`,
 					}}
 				>
-				<Texto/>
+					<Texto />
 				</AbsoluteFill>
 			</Sequence>
 
@@ -60,7 +60,7 @@ export const TextoLogoBXF: React.FC = () => {
 						transform: `scale(${escalaGrande})`,
 					}}
 				>
-				<Texto/>
+					<Texto />
 				</AbsoluteFill>
 			</Sequence>
 
@@ -70,10 +70,9 @@ export const TextoLogoBXF: React.FC = () => {
 						transform: `scale(${escalaSalida})`,
 					}}
 				>
-				<Texto/>
+					<Texto />
 				</AbsoluteFill>
 			</Sequence>
-
 		</>
 	);
 };

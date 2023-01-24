@@ -6,9 +6,9 @@ import {CajaBXF} from './CajaBXF';
 import {RotacionCaja} from './RotacionCaja';
 import {SeparacionCaja} from './SeparacionCaja';
 import {CuadroBlancoSalida} from './CuadroBlancoSalida';
-import { Nube } from './Nube';
-import { Candado } from './Candado';
-import { Calendario } from './Calendario';
+import {Nube} from './Nube';
+import {Candado} from './Candado';
+import {Calendario} from './Calendario';
 
 export const MyComposition = () => {
 	const {fps, durationInFrames, width, height} = useVideoConfig();
@@ -35,8 +35,7 @@ export const MyComposition = () => {
 				}}
 			>
 				this video is {width}x{height}px and {durationInFrames / fps} seconds
-				long.
-				By LeonardoHP
+				long. By LeonardoHP
 			</p>
 
 			<Sequence name="cortinillaEntrada">
@@ -53,20 +52,14 @@ export const MyComposition = () => {
 			</Sequence>
 
 			<Sequence name="primeraTransformacion" from={95} durationInFrames={30}>
-				<Candado/>
+				<Candado />
 			</Sequence>
 			<Sequence name="segundaTransformacion" from={125} durationInFrames={30}>
-				<Nube/>
+				<Nube />
 			</Sequence>
 			<Sequence name="terceraTransformacion" from={155} durationInFrames={45}>
-				<Calendario/>
+				<Calendario />
 			</Sequence>
-
-
-
-
-
-
 
 			<Sequence name="cuartaAnimacion" from={200} durationInFrames={20}>
 				<SeparacionCaja />
@@ -75,8 +68,6 @@ export const MyComposition = () => {
 			<Sequence name="cortinillaSalida" from={264} durationInFrames={25}>
 				<CuadroBlancoSalida />
 			</Sequence>
-		
-
 		</div>
 	);
 };

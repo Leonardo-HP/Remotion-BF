@@ -55,8 +55,7 @@ export const Candado: React.FC = () => {
 		extrapolateRight: 'clamp',
 	});
 
-/// regreso-----------------------------------------------------
-
+	/// regreso-----------------------------------------------------
 
 	const rotacionRegreso = interpolate(frame, [17, 30], [90, 0], {
 		extrapolateRight: 'clamp',
@@ -89,12 +88,7 @@ export const Candado: React.FC = () => {
 	const opacityRegreso = interpolate(frame, [17, 30], [1, 0], {
 		extrapolateRight: 'clamp',
 	});
-/// //////////////////////////////////////////////////////////////
-
-
-
-
-
+	/// //////////////////////////////////////////////////////////////
 
 	return (
 		<>
@@ -140,13 +134,7 @@ export const Candado: React.FC = () => {
 				/>
 			</Sequence>
 
-
-
-
-
-
-
-      <Sequence name="CajaCandadoRegreso" from={17}>
+			<Sequence name="CajaCandadoRegreso" from={17}>
 				<AbsoluteFill
 					style={{
 						height: '500px',
@@ -170,7 +158,7 @@ export const Candado: React.FC = () => {
 						top: '196px',
 						left: `${positionbRegreso}px`,
 						borderRadius: '200px 200px 0 0 ',
-						opacity:opacityRegreso,
+						opacity: opacityRegreso,
 					}}
 				/>
 			</Sequence>
@@ -187,23 +175,6 @@ export const Candado: React.FC = () => {
 					}}
 				/>
 			</Sequence>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		</>
 	);
 };
