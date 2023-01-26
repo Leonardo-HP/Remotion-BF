@@ -1,4 +1,6 @@
 import {Composition} from 'remotion';
+import { Colores } from './Arcoiris/Colores';
+import { Factura } from './Caja/Factura';
 import {Calendario} from './CortinillaBXF/Calendario';
 import {Candado} from './CortinillaBXF/Candado';
 
@@ -50,6 +52,25 @@ export const RemotionRoot: React.FC = () => {
 			<Composition
 				id="Calendario"
 				component={Calendario}
+				durationInFrames={31}
+				fps={30}
+				width={1920}
+				height={1080}
+			/>
+
+
+<Composition
+				id="Factura"
+				component={Factura}
+				durationInFrames={31}
+				fps={30}
+				width={1920}
+				height={1080}
+			/>
+
+<Composition
+				id="Colores"
+				component={Colores}
 				durationInFrames={31}
 				fps={30}
 				width={1920}
