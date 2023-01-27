@@ -7,6 +7,9 @@ import {Candado} from './CortinillaBXF/Candado';
 import {MyComposition} from './CortinillaBXF/Composition';
 import {Nube} from './CortinillaBXF/Nube';
 import {Mark} from './Mark/Mark';
+import { CompositionArcoiris } from './Arcoiris/CompositionArcoiris';
+import { CajaRealBXF } from './Caja/Caja';
+import { FondoBXF } from './Caja/Fondo';
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -62,16 +65,34 @@ export const RemotionRoot: React.FC = () => {
 <Composition
 				id="Factura"
 				component={Factura}
-				durationInFrames={31}
+				durationInFrames={120}
+				fps={30}
+				width={1920}
+				height={1080}
+			/>
+		<Composition
+				id="Caja"
+				component={CajaRealBXF}
+				durationInFrames={120}
 				fps={30}
 				width={1920}
 				height={1080}
 			/>
 
 <Composition
+				id="FondoBXF"
+				component={FondoBXF}
+				durationInFrames={120}
+				fps={30}
+				width={1920}
+				height={1080}
+			/>
+
+
+<Composition
 				id="Colores"
-				component={Colores}
-				durationInFrames={31}
+				component={CompositionArcoiris}
+				durationInFrames={50}
 				fps={30}
 				width={1920}
 				height={1080}

@@ -7,178 +7,40 @@ import {
 	spring,
 	Sequence,
 } from 'remotion';
-import { Modelo } from './ModeloFactura';
 
-export const Factura: React.FC = () => {
+
+export const Modelo: React.FC = () => {
 	const frame = useCurrentFrame();
-	const {durationInFrames} = useVideoConfig();
-
-
-	const jump10 = interpolate(frame, [0,3,15,18], [280, 240,240,280], {
-		extrapolateRight: 'clamp',
-	});
-	const jump9 = interpolate(frame, [0,6,18,21], [280, 240,240,280], {
-		extrapolateRight: 'clamp',
-	});
-	const jump8 = interpolate(frame, [0,9,21,24], [280, 240,240,280], {
-		extrapolateRight: 'clamp',
-	});
-	const jump7 = interpolate(frame, [0,12,24,27], [280, 240,240,280], {
-		extrapolateRight: 'clamp',
-	});
-	const jump6 = interpolate(frame, [0,15,27,30], [280, 240,240,280], {
-		extrapolateRight: 'clamp',
-	});
-	const jump5 = interpolate(frame, [0,18,30,33], [280, 240,240,280], {
-		extrapolateRight: 'clamp',
-	});
-	const jump4 = interpolate(frame, [0,21,33,36], [280, 240,240,280], {
-		extrapolateRight: 'clamp',
-	});
-	const jump3 = interpolate(frame, [0,24,39,42], [280, 240,240,280], {
-		extrapolateRight: 'clamp',
-	});
-	const jump2 = interpolate(frame, [0,27,42,45], [280, 240,240,280], {
-		extrapolateRight: 'clamp',
-	});
-	const jump1 = interpolate(frame, [0,29,45,48], [280, 240,240,280], {
-		extrapolateRight: 'clamp',
+	const {fps} = useVideoConfig();
+	const driver = spring({
+		from: 0,
+		to: 15,
+		frame,
+		fps,
+		config: {
+			mass: 10,
+			stiffness: 80,
+			damping: 200,
+		},
 	});
 
-	/// //////////////	transform: ' skew(0deg,4deg)',////////////////////////////////////////////////
+	
 
+	/// ///'linear-gradient(45deg, rgba(182,107,0,1) 0%, rgba(255,191,0,1) 80%)'/////////
 	return (
 		<>
-			<Sequence name="Hoja" durationInFrames={121}>
-				
-				<AbsoluteFill
-					style={{
-						height: '600px',
-						width: '500px',
-						border: '10px solid white',
-						top: jump1,
-						left: '520px',
-						background: 'white',
-						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
-					}}
-				/>
-				<AbsoluteFill
-					style={{
-						height: '600px',
-						width: '500px',
-						border: '10px solid white',
-						top: jump2,
-						left: '540px',
-						background: 'white',
-						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
-					}}
-				/>
-				<AbsoluteFill
-					style={{
-						height: '600px',
-						width: '500px',
-						border: '10px solid white',
-						top: jump3,
-						left: '560px',
-						background: 'white',
-						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
-					}}
-				/>
-				<AbsoluteFill
-					style={{
-						height: '600px',
-						width: '500px',
-						border: '10px solid white',
-						top: jump4,
-						left: '580px',
-						background: 'white',
-						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
-					}}
-				/>
 
-				<AbsoluteFill
+<Sequence>
+<AbsoluteFill
 					style={{
 						height: '600px',
 						width: '500px',
 						border: '10px solid white',
-						top: jump5,
-						left: '600px',
-						background: 'white',
-						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
-					}}
-				/>
-				<AbsoluteFill
-					style={{
-						height: '600px',
-						width: '500px',
-						border: '10px solid white',
-						top: jump6,
-						left: '620px',
-						background: 'white',
-						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
-					}}
-				/>
-				<AbsoluteFill
-					style={{
-						height: '600px',
-						width: '500px',
-						border: '10px solid white',
-						top: jump7,
-						left: '640px',
-						background: 'white',
-						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
-					}}
-				/>
-				<AbsoluteFill
-					style={{
-						height: '600px',
-						width: '500px',
-						border: '10px solid white',
-						top: jump8,
-						left: '660px',
-						background: 'white',
-						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
-					}}
-				/>
-
-				<AbsoluteFill
-					style={{
-						height: '600px',
-						width: '500px',
-						border: '10px solid white',
-						top: jump9,
-						left: '680px',
-						background: 'white',
-						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
-					}}
-				// eslint-disable-next-line react/jsx-no-comment-textnodes
-				/>
-
-
-
-/////////////
-
-
-
-				<AbsoluteFill
-					style={{
-						height: '600px',
-						width: '500px',
-						border: '10px solid white',
-						top: jump10,
+						top: '0',
 						left: '700px',
 						background: 'white',
 						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
+					
 					}}
 				>
 								<AbsoluteFill
@@ -441,7 +303,8 @@ export const Factura: React.FC = () => {
 						/>
 		
 				</AbsoluteFill>
-</Sequence>
+
+        </Sequence>
 		</>
 	);
 };
