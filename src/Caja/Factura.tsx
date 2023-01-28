@@ -6,13 +6,14 @@ import {
 	useVideoConfig,
 	spring,
 	Sequence,
+	delayRender,
 } from 'remotion';
 import { Modelo } from './ModeloFactura';
 
 export const Factura: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {durationInFrames} = useVideoConfig();
-
+	
 
 	const jump10 = interpolate(frame, [0,3,15,18], [280, 240,240,280], {
 		extrapolateRight: 'clamp',
@@ -45,6 +46,9 @@ export const Factura: React.FC = () => {
 		extrapolateRight: 'clamp',
 	});
 
+
+
+
 	/// //////////////	transform: ' skew(0deg,4deg)',////////////////////////////////////////////////
 
 	return (
@@ -60,7 +64,7 @@ export const Factura: React.FC = () => {
 						left: '520px',
 						background: 'white',
 						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
+						transform: ' skew(0deg,7deg)',
 					}}
 				/>
 				<AbsoluteFill
@@ -72,7 +76,7 @@ export const Factura: React.FC = () => {
 						left: '540px',
 						background: 'white',
 						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
+						transform: ' skew(0deg,7deg)',
 					}}
 				/>
 				<AbsoluteFill
@@ -84,7 +88,7 @@ export const Factura: React.FC = () => {
 						left: '560px',
 						background: 'white',
 						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
+						transform: ' skew(0deg,7deg)',
 					}}
 				/>
 				<AbsoluteFill
@@ -96,7 +100,7 @@ export const Factura: React.FC = () => {
 						left: '580px',
 						background: 'white',
 						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
+						transform: ' skew(0deg,7deg)',
 					}}
 				/>
 
@@ -109,7 +113,7 @@ export const Factura: React.FC = () => {
 						left: '600px',
 						background: 'white',
 						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
+						transform: ' skew(0deg,7deg)',
 					}}
 				/>
 				<AbsoluteFill
@@ -121,7 +125,7 @@ export const Factura: React.FC = () => {
 						left: '620px',
 						background: 'white',
 						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
+						transform: ' skew(0deg,7deg)',
 					}}
 				/>
 				<AbsoluteFill
@@ -133,7 +137,7 @@ export const Factura: React.FC = () => {
 						left: '640px',
 						background: 'white',
 						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
+						transform: ' skew(0deg,7deg)',
 					}}
 				/>
 				<AbsoluteFill
@@ -145,7 +149,7 @@ export const Factura: React.FC = () => {
 						left: '660px',
 						background: 'white',
 						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
+						transform: ' skew(0deg,7deg)',
 					}}
 				/>
 
@@ -158,7 +162,7 @@ export const Factura: React.FC = () => {
 						left: '680px',
 						background: 'white',
 						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
+						transform: ' skew(0deg,7deg)',
 					}}
 				// eslint-disable-next-line react/jsx-no-comment-textnodes
 				/>
@@ -171,14 +175,14 @@ export const Factura: React.FC = () => {
 
 				<AbsoluteFill
 					style={{
-						height: '600px',
-						width: '500px',
+						height: '500px',
+						width: '400px',
 						border: '10px solid white',
 						top: jump10,
 						left: '700px',
 						background: 'white',
 						boxShadow: '-5px 0px 5px grey',
-						transform: ' skew(0deg,4deg)',
+						transform: ' skew(0deg,7deg)',
 					}}
 				>
 								<AbsoluteFill
