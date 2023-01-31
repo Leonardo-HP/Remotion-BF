@@ -1,9 +1,16 @@
 import {Component} from 'react';
-import {useVideoConfig, Sequence, Composition, AbsoluteFill, staticFile, Audio} from 'remotion/.';
-import { BolaBlanca } from './BolaBlanca';
-import { CirculoColores } from './CirculoColores';
+import {
+	useVideoConfig,
+	Sequence,
+	Composition,
+	AbsoluteFill,
+	staticFile,
+	Audio,
+} from 'remotion/.';
+import {BolaBlanca} from './BolaBlanca';
+import {CirculoColores} from './CirculoColores';
 import {Colores} from './Colores';
-import { MovimientoCirculo } from './MovimientoCirculo';
+import {MovimientoCirculo} from './MovimientoCirculo';
 import {SalidaColores} from './SalidaColores';
 import {SeparacionColores} from './SeparacionColores';
 import {VueltaColores} from './VueltaColores';
@@ -16,7 +23,6 @@ export const CompositionArcoiris = () => {
 			style={{
 				flex: 1,
 				textAlign: 'center',
-
 			}}
 		>
 			<br />
@@ -47,23 +53,21 @@ export const CompositionArcoiris = () => {
 				<SalidaColores />
 			</Sequence>
 
-			<Sequence name="SeparacionColores" from={130}  durationInFrames={70}>
+			<Sequence name="SeparacionColores" from={130} durationInFrames={70}>
 				<SeparacionColores />
 			</Sequence>
 
-			<Sequence name="CirculoColores" from={160}  durationInFrames={170}>
-      <MovimientoCirculo />
+			<Sequence name="CirculoColores" from={160} durationInFrames={170}>
+				<MovimientoCirculo />
 			</Sequence>
 
-			<Sequence name="CirculoColores" from={400}  durationInFrames={400}>
-      <BolaBlanca />
+			<Sequence name="CirculoColores" from={400} durationInFrames={400}>
+				<BolaBlanca />
 			</Sequence>
 
-<AbsoluteFill>
-<Audio src={staticFile("New Project.mp3")} />
-
-</AbsoluteFill>
-
+			<AbsoluteFill>
+				<Audio src={staticFile('New Project.mp3')} />
+			</AbsoluteFill>
 		</div>
 	);
 };

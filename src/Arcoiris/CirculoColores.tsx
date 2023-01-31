@@ -74,8 +74,7 @@ export const CirculoColores: React.FC = () => {
 						borderBottom: '75px solid #ec1144',
 						transform: `rotate(${rotacionD}deg)`,
 						opacity: opacity9,
-						mixBlendMode:'difference',
-						
+						mixBlendMode: 'difference',
 					}}
 				/>
 				<AbsoluteFill
@@ -91,7 +90,7 @@ export const CirculoColores: React.FC = () => {
 						borderBottom: '75px solid transparent',
 						transform: `rotate(${rotacionI}deg)`,
 						opacity: opacity8,
-						mixBlendMode:'difference',
+						mixBlendMode: 'difference',
 					}}
 				/>
 				<AbsoluteFill
@@ -107,7 +106,7 @@ export const CirculoColores: React.FC = () => {
 						borderBottom: '75px solid #fdffff',
 						transform: `rotate(${rotacionD}deg)`,
 						opacity: opacity7,
-						mixBlendMode:'difference',
+						mixBlendMode: 'difference',
 					}}
 				/>
 				<AbsoluteFill
@@ -123,7 +122,7 @@ export const CirculoColores: React.FC = () => {
 						borderBottom: '75px solid #4f8822',
 						transform: `rotate(${rotacionI}deg)`,
 						opacity: opacity6,
-						mixBlendMode:'difference',
+						mixBlendMode: 'difference',
 					}}
 				/>
 				<AbsoluteFill
@@ -139,7 +138,7 @@ export const CirculoColores: React.FC = () => {
 						borderBottom: '75px solid #f8e606',
 						transform: `rotate(${rotacionD}deg)`,
 						opacity: opacity5,
-						mixBlendMode:'difference',
+						mixBlendMode: 'difference',
 					}}
 				/>
 				<AbsoluteFill
@@ -155,7 +154,7 @@ export const CirculoColores: React.FC = () => {
 						borderBottom: '75px solid transparent',
 						transform: `rotate(${rotacionI}deg)`,
 						opacity: opacity4,
-						mixBlendMode:'difference',
+						mixBlendMode: 'difference',
 					}}
 				/>
 				<AbsoluteFill
@@ -171,7 +170,7 @@ export const CirculoColores: React.FC = () => {
 						borderBottom: '75px solid #dd1180',
 						transform: `rotate(${rotacionD}deg)`,
 						opacity: opacity3,
-						mixBlendMode:'difference',
+						mixBlendMode: 'difference',
 					}}
 				/>
 				<AbsoluteFill
@@ -187,7 +186,7 @@ export const CirculoColores: React.FC = () => {
 						borderBottom: '75px solid #7010b1',
 						transform: `rotate(${rotacionI}deg)`,
 						opacity: opacity2,
-						mixBlendMode:'difference',
+						mixBlendMode: 'difference',
 					}}
 				/>
 				<AbsoluteFill
@@ -203,7 +202,7 @@ export const CirculoColores: React.FC = () => {
 						borderBottom: '75px solid #ac54c1',
 						transform: `rotate(${rotacionD}deg)`,
 						opacity: opacity1,
-						mixBlendMode:'difference',
+						mixBlendMode: 'difference',
 					}}
 				/>
 				<AbsoluteFill
@@ -218,7 +217,7 @@ export const CirculoColores: React.FC = () => {
 						borderRight: '75px solid transparent',
 						borderBottom: '75px solid #ec1144',
 						transform: `rotate(${rotacionI}deg)`,
-						mixBlendMode:'difference',
+						mixBlendMode: 'difference',
 					}}
 				/>
 			</AbsoluteFill>

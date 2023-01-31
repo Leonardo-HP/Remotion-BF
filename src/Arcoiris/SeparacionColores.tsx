@@ -32,7 +32,6 @@ export const SeparacionColores: React.FC = () => {
 		extrapolateRight: 'clamp',
 	});
 
-
 	const widthX3 = interpolate(frame, [20, 40], [70, 0], {
 		extrapolateRight: 'clamp',
 	});
@@ -45,11 +44,9 @@ export const SeparacionColores: React.FC = () => {
 		extrapolateRight: 'clamp',
 	});
 
-	const widthX6 = interpolate(frame, [50,70], [70, 0], {
+	const widthX6 = interpolate(frame, [50, 70], [70, 0], {
 		extrapolateRight: 'clamp',
 	});
-
-
 
 	const amarilloIzquierda1 = interpolate(frame, [0, 20], [520, 0], {
 		extrapolateRight: 'clamp',
@@ -66,8 +63,6 @@ export const SeparacionColores: React.FC = () => {
 		extrapolateRight: 'clamp',
 	});
 
-
-
 	const amarilloIzquierda2 = interpolate(frame, [10, 30], [530, 0], {
 		extrapolateRight: 'clamp',
 	});
@@ -82,11 +77,6 @@ export const SeparacionColores: React.FC = () => {
 	const moradoDerecha2 = interpolate(frame, [10, 30], [1325, 1920], {
 		extrapolateRight: 'clamp',
 	});
-
-	
-
-
-
 
 	const amarilloIzquierda3 = interpolate(frame, [20, 40], [530, 0], {
 		extrapolateRight: 'clamp',
@@ -103,12 +93,10 @@ export const SeparacionColores: React.FC = () => {
 		extrapolateRight: 'clamp',
 	});
 
-
-
 	const amarilloIzquierda4 = interpolate(frame, [30, 50], [520, 0], {
 		extrapolateRight: 'clamp',
 	});
-	const amarilloDerecha4 = interpolate(frame,[30, 50], [520, 850], {
+	const amarilloDerecha4 = interpolate(frame, [30, 50], [520, 850], {
 		extrapolateRight: 'clamp',
 	});
 
@@ -119,9 +107,6 @@ export const SeparacionColores: React.FC = () => {
 	const moradoDerecha4 = interpolate(frame, [30, 50], [1325, 1920], {
 		extrapolateRight: 'clamp',
 	});
-
-
-
 
 	const amarilloIzquierda5 = interpolate(frame, [40, 60], [520, 0], {
 		extrapolateRight: 'clamp',
@@ -138,11 +123,6 @@ export const SeparacionColores: React.FC = () => {
 		extrapolateRight: 'clamp',
 	});
 
-
-
-
-
-
 	const amarilloIzquierda6 = interpolate(frame, [50, 70], [520, 0], {
 		extrapolateRight: 'clamp',
 	});
@@ -157,18 +137,6 @@ export const SeparacionColores: React.FC = () => {
 	const moradoDerecha6 = interpolate(frame, [50, 70], [1325, 1920], {
 		extrapolateRight: 'clamp',
 	});
-
-
-
-
-
-
-
-
-
-
-
-
 
 	/// ////////////
 
@@ -246,7 +214,7 @@ export const SeparacionColores: React.FC = () => {
 
 	return (
 		<div>
-		<Sequence durationInFrames={50}>
+			<Sequence durationInFrames={50}>
 				<AbsoluteFill
 					style={{
 						height: '1080px',
@@ -265,13 +233,9 @@ export const SeparacionColores: React.FC = () => {
 						left: `1325px`,
 					}}
 				/>
-			
 			</Sequence>
 
-
-
-
-			<Sequence name='sepparacion1' >
+			<Sequence name="sepparacion1">
 				<AbsoluteFill
 					style={{
 						height: '1080px',
@@ -310,7 +274,6 @@ export const SeparacionColores: React.FC = () => {
 					}}
 				/>
 			</Sequence>
-
 
 			<Sequence from={10}>
 				<AbsoluteFill
@@ -511,8 +474,6 @@ export const SeparacionColores: React.FC = () => {
 					}}
 				/>
 			</Sequence>
-
-
 		</div>
 	);
 };
