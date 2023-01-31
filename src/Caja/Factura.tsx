@@ -15,34 +15,34 @@ export const Factura: React.FC = () => {
 	const {durationInFrames} = useVideoConfig();
 	
 
-	const jump10 = interpolate(frame, [0,3,15,18], [280, 240,240,280], {
+	const jump10 = interpolate(frame, [0,3,15,18], [280, 200,200,280], {
 		extrapolateRight: 'clamp',
 	});
-	const jump9 = interpolate(frame, [0,6,18,21], [280, 240,240,280], {
+	const jump9 = interpolate(frame, [0,6,18,21], [280, 200,200,280], {
 		extrapolateRight: 'clamp',
 	});
-	const jump8 = interpolate(frame, [0,9,21,24], [280, 240,240,280], {
+	const jump8 = interpolate(frame, [0,9,21,24], [280, 200,200,280], {
 		extrapolateRight: 'clamp',
 	});
-	const jump7 = interpolate(frame, [0,12,24,27], [280, 240,240,280], {
+	const jump7 = interpolate(frame, [0,12,24,27], [280, 200,200,280], {
 		extrapolateRight: 'clamp',
 	});
-	const jump6 = interpolate(frame, [0,15,27,30], [280, 240,240,280], {
+	const jump6 = interpolate(frame, [0,15,27,30], [280, 200,200,280], {
 		extrapolateRight: 'clamp',
 	});
-	const jump5 = interpolate(frame, [0,18,30,33], [280, 240,240,280], {
+	const jump5 = interpolate(frame, [0,18,30,33], [280, 200,200,280], {
 		extrapolateRight: 'clamp',
 	});
-	const jump4 = interpolate(frame, [0,21,33,36], [280, 240,240,280], {
+	const jump4 = interpolate(frame, [0,21,33,36], [280, 200,200,280], {
 		extrapolateRight: 'clamp',
 	});
-	const jump3 = interpolate(frame, [0,24,39,42], [280, 240,240,280], {
+	const jump3 = interpolate(frame, [0,24,39,42], [280, 200,200,280], {
 		extrapolateRight: 'clamp',
 	});
-	const jump2 = interpolate(frame, [0,27,42,45], [280, 240,240,280], {
+	const jump2 = interpolate(frame, [0,27,42,45], [280, 200,200,280], {
 		extrapolateRight: 'clamp',
 	});
-	const jump1 = interpolate(frame, [0,29,45,48], [280, 240,240,280], {
+	const jump1 = interpolate(frame, [0,29,45,48], [280, 200,200,280], {
 		extrapolateRight: 'clamp',
 	});
 
@@ -175,7 +175,7 @@ export const Factura: React.FC = () => {
 
 				<AbsoluteFill
 					style={{
-						height: '500px',
+						height: '600px',
 						width: '400px',
 						border: '10px solid white',
 						top: jump10,

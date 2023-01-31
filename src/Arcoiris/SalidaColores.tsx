@@ -10,7 +10,7 @@ import {
 
 
 
-export const VueltaColores: React.FC = () => {
+export const SalidaColores: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const driver = spring({
@@ -24,21 +24,26 @@ export const VueltaColores: React.FC = () => {
 			damping: 100,
 		},
 	});
-  const rotacionColores = interpolate(frame, [0, 60], [0,90], 
+	
 
-    {
+	const salida = interpolate(frame, [0, 30], [0,1700], 
+		{
       extrapolateRight: 'clamp',
-    });
+    });  
 
-
+  
+	const salida2 = interpolate(frame, [0, 43], [0,-5700], 
+		{
+      extrapolateRight: 'clamp',
+    });   
 
 
   return (
 		<div>
-			<Sequence name="Vuelta" durationInFrames={200} >
+			<Sequence name="Salida" durationInFrames={60} >
 				<AbsoluteFill
 					style={{      
-            transform: `rotate(${rotacionColores}deg)`,    
+            transform: `rotate(90deg)`,    
 
           }}
 			>
@@ -50,7 +55,7 @@ export const VueltaColores: React.FC = () => {
 						width: '3840px',
 						background: '#ec1144',
             top: '5px',
-            left:`-480px`
+            left:`${salida}px`
             
 					}}
 				/>
@@ -61,7 +66,7 @@ export const VueltaColores: React.FC = () => {
 						width: '3840px',
 						background: '#ac54c1',
 						top: '105px',
-            left:`-480pxpx`
+            left:`-480px`
 					}}
 				/>
 			
@@ -72,7 +77,7 @@ export const VueltaColores: React.FC = () => {
             width: '3840px',
 						background: '#7010b1',
 						top: '205px',
-            left:`-480pxpx`
+            left:`${salida2}px`
 					}}
 				/>
 
@@ -83,7 +88,7 @@ export const VueltaColores: React.FC = () => {
               width: '3840px',
 							background: '#dd1180',
 							top: '305px',
-              left:`-480px`
+              left:`${salida}px`
 						}}
 					/>
 				<AbsoluteFill
@@ -92,7 +97,7 @@ export const VueltaColores: React.FC = () => {
             width: '3840px',
 						background: '#4eb2e4',
 						top: '405px',
-            left:`-480px`
+            left:`${salida2}px`
 					}}
 				/>
 			<AbsoluteFill
@@ -101,7 +106,7 @@ export const VueltaColores: React.FC = () => {
             width: '3840px',
 						background: '#f8e606',
 						top: '505px',
-            left:`-480px`
+            left:`${salida}px`
 					}}
 				/>
 			<AbsoluteFill
@@ -110,7 +115,7 @@ export const VueltaColores: React.FC = () => {
 						width: '3840px',
 						background: '#4f8822',
 						top: '605px',
-            left:`$-480px`
+            left:`${salida2}px`
 					}}
 				/>
 		<AbsoluteFill
@@ -119,7 +124,7 @@ export const VueltaColores: React.FC = () => {
             width: '3840px',
 						background: '#79d20a',
 						top: '705px',
-						left:`-480px`
+            left:`${salida}px`
 					}}
 				/>
 				<AbsoluteFill
@@ -128,7 +133,7 @@ export const VueltaColores: React.FC = () => {
             width: '3840px',
 						background: '#fdffff',
 						top: '805px',
-            left:`-480px`
+            left:`${salida2}px`
 					}}
 				/>
 			<AbsoluteFill
@@ -146,7 +151,7 @@ export const VueltaColores: React.FC = () => {
             width: '3840px',
 						background: '#ec1144',
 						top: '1005px',
-            left:`-480px`
+            left:`${salida}px`
 					}}
 				/>
 		

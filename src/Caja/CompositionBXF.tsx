@@ -1,4 +1,4 @@
-import {useVideoConfig, Sequence} from 'remotion/.';
+import {useVideoConfig, Sequence, AbsoluteFill} from 'remotion/.';
 import { CajaBXF } from '../CortinillaBXF/CajaBXF';
 import { CajaRealBXF } from './Caja';
 import { Factura } from './Factura';
@@ -34,7 +34,14 @@ export const CompositionBXF = () => {
 			</p>
       
 <FondoBXF/>
-<Factura/>
+<AbsoluteFill style={{
+	transform: 'scale(0.8)',
+	left:'80px',
+	top:'-50px'
+	}}>
+	<Factura/>
+	</AbsoluteFill>
+
 <CajaRealBXF/>
 
 

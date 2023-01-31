@@ -25,60 +25,62 @@ export const Colores: React.FC = () => {
 
 	// 11
 
-  const linea1Entrada = interpolate(frame, [5, 10], [-3840, 0], {
+
+const duracion = 70
+
+  const linea1Entrada = interpolate(frame, [0, 40], [1920, -480], {
 
 		extrapolateRight: 'clamp',
 	});
 
-  const linea2Entrada = interpolate(frame, [5, 10], [3840, 0], {
+  const linea2Entrada = interpolate(frame, [38, 41], [-1440, -480], {
 
 		extrapolateRight: 'clamp',
 	});
 
-  const linea3Entrada = interpolate(frame, [5, 10], [-3840, 0], {
-
-		extrapolateRight: 'clamp',
-	});
-
-
-  const linea4Entrada = interpolate(frame, [0, 5], [3840, 0], {
-
-		extrapolateRight: 'clamp',
-	});
-  const linea5Entrada = interpolate(frame, [0, 5], [-3840, 0], {
-
-		extrapolateRight: 'clamp',
-	});
-
-  const linea6Entrada = interpolate(frame, [0, 5], [3840, 0], {
+  const linea3Entrada = interpolate(frame, [4, 44], [1920, -480], {
 
 		extrapolateRight: 'clamp',
 	});
 
 
-  const linea7Entrada = interpolate(frame, [0, 5], [-3840, 0], {
+  const linea4Entrada = interpolate(frame, [38, 42], [-1440, -480], {
+
+		extrapolateRight: 'clamp',
+	});
+  const linea5Entrada = interpolate(frame, [8, 48], [1920, -480], {
+
+		extrapolateRight: 'clamp',
+	});
+
+  const linea6Entrada = interpolate(frame, [38, 43], [-1440, -480], {
+
+		extrapolateRight: 'clamp',
+	});
+
+  const linea7Entrada = interpolate(frame, [12, 52], [1920, -480], {
 
 		extrapolateRight: 'clamp',
 	});
 
 
-  const linea8Entrada = interpolate(frame, [0, 5], [3840, 0], {
+  const linea8Entrada = interpolate(frame, [38, 44], [-1440, -480], {
 
 		extrapolateRight: 'clamp',
 	});
 
-  const linea9Entrada = interpolate(frame, [0, 5], [-3840, 0], {
+  const linea9Entrada = interpolate(frame, [18, 56], [1920, -480], {
 
 		extrapolateRight: 'clamp',
 	});
 
-  const linea10Entrada = interpolate(frame, [0, 5], [3840, 0], {
+  const linea10Entrada = interpolate(frame, [38, 50], [-1440, -480], {
 
 		extrapolateRight: 'clamp',
 	});
 
 
-  const linea11Entrada = interpolate(frame, [0, 5], [-3840, 0], {
+  const linea11Entrada = interpolate(frame, [22, 58], [1920, -480], {
 
 		extrapolateRight: 'clamp',
 	});
@@ -87,7 +89,7 @@ export const Colores: React.FC = () => {
 
 	return (
 		<div>
-			<Sequence name="Linea1" durationInFrames={50}>
+			<Sequence name="Linea1" durationInFrames={duracion}>
 				<AbsoluteFill
 					style={{
 						height: '70px',
@@ -101,7 +103,7 @@ export const Colores: React.FC = () => {
 				/>
 			</Sequence>
 
-			<Sequence name="Linea2" durationInFrames={30}>
+			<Sequence name="Linea2" durationInFrames={duracion}>
 				<AbsoluteFill
 					style={{
 						height: '70px',
@@ -112,7 +114,7 @@ export const Colores: React.FC = () => {
 					}}
 				/>
 			</Sequence>
-			<Sequence name="Linea3" durationInFrames={30}>
+			<Sequence name="Linea3" durationInFrames={duracion}>
 				<AbsoluteFill
 					style={{
 						height: '70px',
@@ -124,7 +126,7 @@ export const Colores: React.FC = () => {
 				/>
 			</Sequence>
 			<div>
-				<Sequence name="Linea4" durationInFrames={30}>
+				<Sequence name="Linea4" durationInFrames={duracion}>
 					<AbsoluteFill
 						style={{
 							height: '70px',
@@ -136,7 +138,7 @@ export const Colores: React.FC = () => {
 					/>
 				</Sequence>
 			</div>
-			<Sequence name="Linea5" durationInFrames={30}>
+			<Sequence name="Linea5" durationInFrames={duracion}>
 				<AbsoluteFill
 					style={{
 						height: '70px',
@@ -147,7 +149,7 @@ export const Colores: React.FC = () => {
 					}}
 				/>
 			</Sequence>
-			<Sequence name="Linea6" durationInFrames={30}>
+			<Sequence name="Linea6" durationInFrames={duracion}>
 				<AbsoluteFill
 					style={{
 						height: '70px',
@@ -158,7 +160,7 @@ export const Colores: React.FC = () => {
 					}}
 				/>
 			</Sequence>
-			<Sequence name="Linea7" durationInFrames={30}>
+			<Sequence name="Linea7" durationInFrames={duracion}>
 				<AbsoluteFill
 					style={{
 						height: '70px',
@@ -169,18 +171,18 @@ export const Colores: React.FC = () => {
 					}}
 				/>
 			</Sequence>
-			<Sequence name="Linea8" durationInFrames={30}>
+			<Sequence name="Linea8" durationInFrames={duracion}>
 				<AbsoluteFill
 					style={{
 						height: '70px',
             width: '3840px',
 						background: '#79d20a',
 						top: '705px',
-            left:`${linea8Entrada}px`
+						left:`${linea8Entrada}px`
 					}}
 				/>
 			</Sequence>
-			<Sequence name="Linea9" durationInFrames={30}>
+			<Sequence name="Linea9" durationInFrames={duracion}>
 				<AbsoluteFill
 					style={{
 						height: '70px',
@@ -191,7 +193,7 @@ export const Colores: React.FC = () => {
 					}}
 				/>
 			</Sequence>
-			<Sequence name="Linea10" durationInFrames={30}>
+			<Sequence name="Linea10" durationInFrames={duracion}>
 				<AbsoluteFill
 					style={{
 						height: '70px',
@@ -202,7 +204,7 @@ export const Colores: React.FC = () => {
 					}}
 				/>
 			</Sequence>
-			<Sequence name="Linea11" durationInFrames={30}>
+			<Sequence name="Linea11" durationInFrames={duracion}>
 				<AbsoluteFill
 					style={{
 						height: '70px',
