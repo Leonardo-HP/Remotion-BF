@@ -74,6 +74,8 @@ export const MovimientoCirculo: React.FC = () => {
 					style={{
 						top: `${top2}px`,
 						left: `${left2}px`,
+						
+						
 					}}
 				>
 					<CirculoColores />

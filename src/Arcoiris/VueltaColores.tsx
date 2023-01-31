@@ -24,7 +24,7 @@ export const VueltaColores: React.FC = () => {
 			damping: 100,
 		},
 	});
-  const rotacionColores = interpolate(frame, [0, 60], [0,90], 
+  const rotacionColores = interpolate(frame, [0, 20], [0,90], 
 
     {
       extrapolateRight: 'clamp',
