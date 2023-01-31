@@ -8,7 +8,7 @@ import {
 	Sequence,
 } from 'remotion';
 
-export const CirculoColores: React.FC = () => {
+export const BolaBlanca: React.FC = () => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 	const driver = spring({
@@ -23,44 +23,57 @@ export const CirculoColores: React.FC = () => {
 		},
 	});
 
-	const rotacionI = interpolate(frame, [0, 50], [0, 360], {
+	const rotacionI = interpolate(frame, [0, 120], [0, 495], {
 		extrapolateRight: 'clamp',
 	});
-	const rotacionD = interpolate(frame, [0, 50], [0, -360], {
+	const rotacionD = interpolate(frame, [0, 120], [0, -550], {
+		extrapolateRight: 'clamp',
+	});
+  const Top1 = interpolate(frame, [0, 80], [2000, -300], {
+		extrapolateRight: 'clamp',
+	});
+  
+  const Left1 = interpolate(frame, [0, 80], [-600, -600], {
 		extrapolateRight: 'clamp',
 	});
 
-	const opacity1 = interpolate(frame, [0, 2], [0, 1], {
+  const TopBola1 = interpolate(frame, [0, 45], [-100, 600], {
 		extrapolateRight: 'clamp',
 	});
-	const opacity2 = interpolate(frame, [2, 4], [0, 1], {
+  
+  const LeftBola1 = interpolate(frame, [0, 80], [1000, 1000], {
 		extrapolateRight: 'clamp',
 	});
-	const opacity3 = interpolate(frame, [4, 6], [0, 1], {
+
+
+  const TopBola2 = interpolate(frame, [0, 100], [200,400   ], {
 		extrapolateRight: 'clamp',
 	});
-	const opacity4 = interpolate(frame, [6, 8], [0, 1], {
+  
+  const LeftBola2 = interpolate(frame, [0, 80], [1200, 100], {
 		extrapolateRight: 'clamp',
 	});
-	const opacity5 = interpolate(frame, [8, 10], [0, 1], {
-		extrapolateRight: 'clamp',
-	});
-	const opacity6 = interpolate(frame, [10, 12], [0, 1], {
-		extrapolateRight: 'clamp',
-	});
-	const opacity7 = interpolate(frame, [12, 14], [0, 1], {
-		extrapolateRight: 'clamp',
-	});
-	const opacity8 = interpolate(frame, [14, 16], [0, 1], {
-		extrapolateRight: 'clamp',
-	});
-	const opacity9 = interpolate(frame, [16, 18], [0, 1], {
-		extrapolateRight: 'clamp',
-	});
+
+
+
+
+
+
+
+
+
+
+
 
 	return (
-		<Sequence name="circulo" durationInFrames={300}>
-			<AbsoluteFill style={{top: '80px'}}>
+		<Sequence name="circulo" durationInFrames={800}>
+			<AbsoluteFill style={{
+
+        top:Top1,
+        left: Left1
+    
+    
+    }}>
 				<AbsoluteFill
 					style={{
 						top: '-800px',
@@ -73,7 +86,7 @@ export const CirculoColores: React.FC = () => {
 						borderRight: '75px solid transparent',
 						borderBottom: '75px solid #ec1144',
 						transform: `rotate(${rotacionD}deg)`,
-						opacity: opacity9,
+						
 					}}
 				/>
 				<AbsoluteFill
@@ -88,7 +101,7 @@ export const CirculoColores: React.FC = () => {
 						borderRight: '75px solid #fcb00b',
 						borderBottom: '75px solid transparent',
 						transform: `rotate(${rotacionI}deg)`,
-						opacity: opacity8,
+						
 					}}
 				/>
 				<AbsoluteFill
@@ -103,7 +116,7 @@ export const CirculoColores: React.FC = () => {
 						borderRight: '75px solid #fdffff',
 						borderBottom: '75px solid #fdffff',
 						transform: `rotate(${rotacionD}deg)`,
-						opacity: opacity7,
+					
 					}}
 				/>
 				<AbsoluteFill
@@ -118,7 +131,7 @@ export const CirculoColores: React.FC = () => {
 						borderRight: '75px solid #4f8822',
 						borderBottom: '75px solid #4f8822',
 						transform: `rotate(${rotacionI}deg)`,
-						opacity: opacity6,
+					
 					}}
 				/>
 				<AbsoluteFill
@@ -133,7 +146,7 @@ export const CirculoColores: React.FC = () => {
 						borderRight: '75px solid transparent',
 						borderBottom: '75px solid #f8e606',
 						transform: `rotate(${rotacionD}deg)`,
-						opacity: opacity5,
+
 					}}
 				/>
 				<AbsoluteFill
@@ -148,7 +161,7 @@ export const CirculoColores: React.FC = () => {
 						borderRight: '75px solid #4eb2e4',
 						borderBottom: '75px solid transparent',
 						transform: `rotate(${rotacionI}deg)`,
-						opacity: opacity4,
+				
 					}}
 				/>
 				<AbsoluteFill
@@ -163,7 +176,7 @@ export const CirculoColores: React.FC = () => {
 						borderRight: '75px solid #dd1180',
 						borderBottom: '75px solid #dd1180',
 						transform: `rotate(${rotacionD}deg)`,
-						opacity: opacity3,
+					
 					}}
 				/>
 				<AbsoluteFill
@@ -178,7 +191,7 @@ export const CirculoColores: React.FC = () => {
 						borderRight: '75px solid #7010b1',
 						borderBottom: '75px solid #7010b1',
 						transform: `rotate(${rotacionI}deg)`,
-						opacity: opacity2,
+					
 					}}
 				/>
 				<AbsoluteFill
@@ -193,7 +206,7 @@ export const CirculoColores: React.FC = () => {
 						borderRight: '75px solid transparent',
 						borderBottom: '75px solid #ac54c1',
 						transform: `rotate(${rotacionD}deg)`,
-						opacity: opacity1,
+				
 					}}
 				/>
 				<AbsoluteFill
@@ -211,6 +224,36 @@ export const CirculoColores: React.FC = () => {
 					}}
 				/>
 			</AbsoluteFill>
+
+      <Sequence durationInFrames={30}>
+      <AbsoluteFill
+					style={{
+						top: `${TopBola1}px`,
+						left: `${LeftBola1}px`,
+						borderRadius: '50%',
+						width: '100px',
+						height: '100px',
+            background:'white'
+					}}
+				/>
+        </Sequence>
+
+        <Sequence  from={30}>
+      <AbsoluteFill
+					style={{
+						top: `${TopBola2}px`,
+						left: `${LeftBola2}px`,
+						borderRadius: '50%',
+						width: '100px',
+						height: '100px',
+            background:'white'
+					}}
+				/>
+        </Sequence>
+
+
+
+
 		</Sequence>
 	);
 };

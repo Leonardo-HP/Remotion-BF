@@ -93,7 +93,7 @@ export const RemotionRoot: React.FC = () => {
 <Composition
 				id="Colores"
 				component={CompositionArcoiris}
-				durationInFrames={300}
+				durationInFrames={800}
 				fps={30}
 				width={1920}
 				height={1080}

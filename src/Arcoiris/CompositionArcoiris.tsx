@@ -1,7 +1,9 @@
 import {Component} from 'react';
 import {useVideoConfig, Sequence, Composition} from 'remotion/.';
+import { BolaBlanca } from './BolaBlanca';
 import { CirculoColores } from './CirculoColores';
 import {Colores} from './Colores';
+import { MovimientoCirculo } from './MovimientoCirculo';
 import {SalidaColores} from './SalidaColores';
 import {SeparacionColores} from './SeparacionColores';
 import {VueltaColores} from './VueltaColores';
@@ -45,13 +47,16 @@ export const CompositionArcoiris = () => {
 				<SalidaColores />
 			</Sequence>
 
-			<Sequence name="SeparacionColores" from={160}  durationInFrames={40}>
+			<Sequence name="SeparacionColores" from={160}  durationInFrames={70}>
 				<SeparacionColores />
 			</Sequence>
 
+			<Sequence name="CirculoColores" from={200}  durationInFrames={200}>
+      <MovimientoCirculo />
+			</Sequence>
 
-			<Sequence name="CirculoColores" from={200}>
-				<CirculoColores/>
+			<Sequence name="CirculoColores" from={400}  durationInFrames={600}>
+      <BolaBlanca />
 			</Sequence>
 
 
