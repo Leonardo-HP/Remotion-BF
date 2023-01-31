@@ -14,7 +14,7 @@ export const CompositionArcoiris = () => {
 			style={{
 				flex: 1,
 				textAlign: 'center',
-				background: 'black',
+
 			}}
 		>
 			<br />
@@ -50,9 +50,12 @@ export const CompositionArcoiris = () => {
 			</Sequence>
 
 
-			<Sequence name="CirculoColores" from={160}>
+			<Sequence name="CirculoColores" from={200}>
 				<CirculoColores/>
 			</Sequence>
+
+
+
 		</div>
 	);
 };
